@@ -1,7 +1,39 @@
+# Microsoft SharePoint Framework Training Module - Build Microsoft Teams customization using SharePoint Framework
 
-# Contributing
+This module will introduce you to leveraging your SharePoint Framework customizations with Microsoft Teams.
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+## Lab - Build Microsoft Teams customization using SharePoint Framework
+
+In this lab you will create a SharePoint Framework solution that will work in both SharePoint and Microsoft Teams.
+
+- [Lab manual](./Lab.md)
+
+## Demos
+
+- [Deploy SPFx Solutions to Microsoft Teams](./Demos/01-spfxteams)
+- [Adding Conditional Logic for SharePoint or Microsoft Teams](./Demos/02-spfxteams)
+- [Updating Configuration Settings](./Demos/03-spfxteams)
+
+## Contributors
+
+| Roles                | Author(s)                                               |
+| -------------------- | ------------------------------------------------------- |
+| Lab Manuals / Slides | Andrew Connell (Microsoft MVP, Voitanos) @andrewconnell |
+| Sponsor / Support    | Vesa Juvonen (Microsoft) @VesaJuvonen                   |
+
+## Version history
+
+| Version | Date          | Comments        |
+| ------- | ------------- | --------------- |
+| 1.0     | April 3, 2019 | Initial release |
+
+## Disclaimer
+
+**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+
+## Contributing
+
+This project welcomes contributions and suggestions. Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.microsoft.com.
 
@@ -12,3 +44,5 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+<img src="https://telemetry.sharepointpnp.com/sp-dev-training-spfx-teams-dev" />
