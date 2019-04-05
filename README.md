@@ -14,6 +14,10 @@ In this lab you will create a SharePoint Framework solution that will work in bo
 - [Adding Conditional Logic for SharePoint or Microsoft Teams](./Demos/02-spfxteams)
 - [Updating Configuration Settings](./Demos/03-spfxteams)
 
+## Watch the Module - Video
+
+This module has been recorded and is available in the SharePoint Development YouTube channel: [SharePoint Framework Training - Build Microsoft Teams customization using SharePoint Framework](https://www.youtube.com/watch?v=0zVtDn0ckBM&list=PLR9nK3mnD-OV-RPXQ3Lco845qoEy7VJoc)
+
 ## Contributors
 
 | Roles                | Author(s)                                               |
