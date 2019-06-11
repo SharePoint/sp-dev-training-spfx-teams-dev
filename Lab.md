@@ -86,7 +86,9 @@ In this exercise you will create a SharePoint Framework (SPFx) solution that wil
         | `{{SPFX_COMPONENT_LONG_DESCRIPTION}}`  | `preconfiguredEntries[0].description` |
         | `{{SPFX_COMPONENT_ID}}`                | `id`                                  |
 
-    > Note: Don't miss replacing `{{SPFX_COMPONENT_ID}}` in `configurableTabs.configurationUrl`. You will likely have to scroll your editor to the right to see it.
+    > Note: Don't miss replacing `{{SPFX_COMPONENT_ID}}` in `configurableTabs[0].configurationUrl`. You will likely have to scroll your editor to the right to see it.
+
+    > Note: The tokens surrounded by single curly braces (e.g. `{teamSiteDomain}`) do not need to be replaced.
 
     1. Create a Microsoft Teams app package by zipping the contents of the **./teams** folder. Make sure to zip just the contents and not the folder itself. This ZIP archive should contain 3 files at the root: two images & the **manifest.json**.
 
