@@ -65,6 +65,8 @@ In this demo you will create a SharePoint Framework (SPFx) solution that will wo
         | `{{SPFX_COMPONENT_LONG_DESCRIPTION}}`  | `preconfiguredEntries[0].description` |
         | `{{SPFX_COMPONENT_ID}}`                | `id`                                  |
 
+    > Note: Don't miss replacing `{{SPFX_COMPONENT_ID}}` in `configurableTabs.configurationUrl`. You will likely have to scroll your editor to the right to see it.
+
     1. Create a Microsoft Teams app package by zipping the contents of the **./teams** folder. Make sure to zip just the contents and not the folder itself. This ZIP archive should contain 3 files at the root: two images & the **manifest.json**.
 
 ### Create and Deploy the SharePoint Package
@@ -144,7 +146,10 @@ In this demo you will create a SharePoint Framework (SPFx) solution that will wo
 
                 ![Screenshot of the Microsoft Teams teams navigation](../../Images/addTab-02.png)
 
-            1. In the **Add a tab** dialog, scroll to the bottom of the list and select **More Apps**
+            1. In the **Add a tab** dialog, select **More Apps**
+
+                ![Screenshot of the Add a tab dialog](../../Images/addTab-10.png)
+
             1. Select the **Upload a custom app** > **Upload for ...** from the list of app categories:
 
                 ![Screenshot of the Microsoft Teams teams navigation](../../Images/addTab-03.png)
