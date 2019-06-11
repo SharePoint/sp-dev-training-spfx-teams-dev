@@ -54,7 +54,7 @@ In this demo you will create a SharePoint Framework (SPFx) solution that will wo
     > Because the automatic generation & deployment of the Microsoft Teams manifest is not currently operational, you will manually create the Microsoft Teams manifest and package.
 
 1. Manually create the Microsoft Teams manifest and app package:
-    1. Copy the **manifest.json** file from [Resources/manifest.json](./Resources/manifest.json) to the **./teams** folder in your project.
+    1. Copy the **manifest.json** file from [Resources/manifest.json](../../Resources/manifest.json) to the **./teams** folder in your project.
     1. Open the **manifest.json** file. This file contains multiple strings that need to be updated to match the SPFx component. Use the following table to determine the values that should be replaced. The SPFx component properties are found in the web part manifest file: **./src/webparts/spFxTeamsTogether/SpFxTeamsTogetherWebPart.manifest.json**
 
         |          manifest.json string          |  Property in SPFx component manifest  |
