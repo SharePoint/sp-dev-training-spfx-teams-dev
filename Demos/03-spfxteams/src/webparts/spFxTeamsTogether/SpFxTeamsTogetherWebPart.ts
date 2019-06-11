@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license.
+
 import { Version } from '@microsoft/sp-core-library';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import {
@@ -6,10 +9,10 @@ import {
 } from '@microsoft/sp-property-pane';
 import { escape } from '@microsoft/sp-lodash-subset';
 
-import * as microsoftTeams from '@microsoft/teams-js';
-
 import styles from './SpFxTeamsTogetherWebPart.module.scss';
 import * as strings from 'SpFxTeamsTogetherWebPartStrings';
+
+import * as microsoftTeams from '@microsoft/teams-js';
 
 export interface ISpFxTeamsTogetherWebPartProps {
   description: string;
@@ -19,31 +22,18 @@ export interface ISpFxTeamsTogetherWebPartProps {
 export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpFxTeamsTogetherWebPartProps> {
   private teamsContext: microsoftTeams.Context;
 
-  protected onInit(): Promise<void> {
-    return new Promise<void>((resolve, reject) => {
-      if (this.context.microsoftTeams) {
-        this.context.microsoftTeams.getContext(context => {
-          this.teamsContext = context;
-          resolve();
-        });
-      } else {
-        resolve();
-      }
-    });
-  }
-
   public render(): void {
-    let title: string = (this.teamsContext) 
+    let title: string = (this.teamsContext)
       ? 'Teams'
       : 'SharePoint';
-    let currentLocation: string = (this.teamsContext) 
+    let currentLocation: string = (this.teamsContext)
       ? `Team: ${this.teamsContext.teamName}`
       : `site collection ${this.context.pageContext.web.title}`;
 
     this.domElement.innerHTML = `
-      <div class="${ styles.spFxTeamsTogether }">
-        <div class="${ styles.container }">
-          <div class="${ styles.row }">
+      <div class="${ styles.spFxTeamsTogether}">
+        <div class="${ styles.container}">
+          <div class="${ styles.row}">
             <div class="${ styles.column }">
               <span class="${ styles.title }">Welcome to ${ title }!</span>
               <p class="${ styles.subTitle }">Currently in the context of the following ${ currentLocation }</p>
@@ -56,6 +46,19 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
           </div>
         </div>
       </div>`;
+  }
+
+  protected onInit(): Promise<void> {
+    return new Promise<void>((resolve, reject) => {
+      if (this.context.microsoftTeams) {
+        this.context.microsoftTeams.getContext(context => {
+          this.teamsContext = context;
+          resolve();
+        });
+      } else {
+        resolve();
+      }
+    });
   }
 
   protected get dataVersion(): Version {
@@ -78,7 +81,7 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
                 }),
                 PropertyPaneTextField('customSetting', {
                   label: 'Custom Setting'
-                })
+                })                
               ]
             }
           ]
