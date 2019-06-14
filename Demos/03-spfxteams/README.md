@@ -75,12 +75,12 @@ In this demo, you will update the configuration settings for the SharePoint Fram
         ![Screenshot dragging the SharePoint package into the Apps for SharePoint library](../../Images/updateSolution-01.png)
 
 1. Test the changes.
-    1. Navigate back to the SharePoint page where you added the web part in the previous demo.
+    1. Navigate back to the SharePoint page where you added the web part in the previous exercise and refresh the page.
     1. Edit the page and add a value to the new custom property you added. Notice how the page shows the value of the configuration setting:
 
         ![Screenshot of the SPFx solution in SharePoint](../../Images/updateSettings-01.png)
 
-    1. Now go back into the Microsoft Teams team. Select the down arrow to the right of the **SPFx Teams Together** tab and select **Settings**.
+    1. Now go back into the Microsoft Teams team. Refresh the page if you have Teams open in a web browser. Select the down arrow to the right of the **SPFx Teams Together** tab and select **Settings**.
 
         ![Screenshot of the SPFx solution in Microsoft Teams](../../Images/updateSettings-02.png)
 
@@ -99,7 +99,7 @@ In this demo, you will update the configuration settings for the SharePoint Fram
     1. Select the down-arrow to the right of the **SPFx Teams Together** tab and select **Remove**.
     1. When prompted, select **Remove**.
 1. Update the previously installed Microsoft Teams app:
-    1. Within the Microsoft Teams client, select **Store** in the lower right corner.
+    1. Within the Microsoft Teams client, select **Store** in the lower right corner, and then select your tenant from the sidebar menu.
     1. Select the app menu, then select **Update**.
 
         ![Screenshot of the SPFx solution in Microsoft Teams](../../Images/updateSettings-04.png)
