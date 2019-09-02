@@ -16,7 +16,7 @@ In this lab you will create a SharePoint Framework solution that will work in bo
 
 ## Watch the Module - Video
 
-This module has been recorded and is available in the SharePoint Development YouTube channel: [SharePoint Framework Training - Build Microsoft Teams customization using SharePoint Framework](https://www.youtube.com/watch?v=0zVtDn0ckBM&list=PLR9nK3mnD-OV-RPXQ3Lco845qoEy7VJoc)
+This module has been recorded and is available in the SharePoint Development YouTube channel: [SharePoint Framework Training - Build Microsoft Teams customization using SharePoint Framework](https://www.youtube.com/watch?v=Yfs3-qawJfA&list=PLR9nK3mnD-OV-RPXQ3Lco845qoEy7VJoc)
 
 ## Contributors
 
