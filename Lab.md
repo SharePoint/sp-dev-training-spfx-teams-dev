@@ -211,7 +211,7 @@ In this exercise you will create a SharePoint Framework (SPFx) solution that wil
 
 ## Exercise 2: Adding Conditional Logic for SharePoint or Microsoft Teams
 
-In this exercise, you will update the SharePoint Framework web part to display different information on the page depending if it is running within a SharePoint of Microsoft Teams context.
+In this exercise, you will update the SharePoint Framework web part to display different information on the page depending on whether it is running within a SharePoint of Microsoft Teams context.
 
 > This exercise assumes you completed the previous exercise. The final result from the previous exercise is used as the starting point for this exercise. The final results from the previous exercise can be found here: [./Demos/01-spfxteams](./Demos/01-spfxteams).
 
