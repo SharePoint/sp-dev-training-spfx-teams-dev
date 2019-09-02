@@ -1,6 +1,6 @@
 # Adding Conditional Logic for SharePoint or Microsoft Teams
 
-In this demo, you will update the SharePoint Framework web part to display different information on the page depending if it is running within a SharePoint of Microsoft Teams context.
+In this demo, you will update the SharePoint Framework web part to display different information on the page depending on whether it is running within a SharePoint of Microsoft Teams context.
 
 > This demo assumes you completed the previous demo. The final result from the previous demo is used as the starting point for this demo. The final results from the previous demo can be found here: [../01-spfxteams](../01-spfxteams).
 
