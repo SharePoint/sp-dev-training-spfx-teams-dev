@@ -2,6 +2,8 @@
 
 In this demo, you will update the configuration settings for the SharePoint Framework application, as well as update the configuration details of the Microsoft Teams application.
 
+> This demo assumes you completed the previous demo. The final result from the previous demo is used as the starting point for this demo. The final results from the previous demo can be found here: [../02-spfxteams](../02-spfxteams).
+
 1. Add a new custom property to the web part:
     1. Locate and open the file **./src/webparts/spFxTeamsTogether/SpFxTeamsTogetherWebPart.ts**.
     1. Locate the interface `ISpFxTeamsTogetherWebPartProps`.
