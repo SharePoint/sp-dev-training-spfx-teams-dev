@@ -1,9 +1,9 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT license.
-
 {
+  // Copyright (c) Microsoft Corporation. All rights reserved.
+  // Licensed under the MIT license.
+
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "da364474-35b3-4eb2-95c4-0e04aaf5b60b",
+  "id": "30a56bef-d500-452a-885d-b091d9151dbe",
   "alias": "SpFxTeamsTogetherWebPart",
   "componentType": "WebPart",
 
