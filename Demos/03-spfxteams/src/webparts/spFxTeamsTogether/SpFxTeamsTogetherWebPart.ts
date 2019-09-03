@@ -2,11 +2,11 @@
 // Licensed under the MIT license.
 
 import { Version } from '@microsoft/sp-core-library';
-import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import {
+  BaseClientSideWebPart,
   IPropertyPaneConfiguration,
   PropertyPaneTextField
-} from '@microsoft/sp-property-pane';
+} from '@microsoft/sp-webpart-base';
 import { escape } from '@microsoft/sp-lodash-subset';
 
 import styles from './SpFxTeamsTogetherWebPart.module.scss';
@@ -21,6 +21,19 @@ export interface ISpFxTeamsTogetherWebPartProps {
 
 export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpFxTeamsTogetherWebPartProps> {
   private teamsContext: microsoftTeams.Context;
+
+  protected onInit(): Promise<void> {
+    return new Promise<void>((resolve, reject) => {
+      if (this.context.microsoftTeams) {
+        this.context.microsoftTeams.getContext(context => {
+          this.teamsContext = context;
+          resolve();
+        });
+      } else {
+        resolve();
+      }
+    });
+  }
 
   public render(): void {
     let title: string = (this.teamsContext)
@@ -46,19 +59,6 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
           </div>
         </div>
       </div>`;
-  }
-
-  protected onInit(): Promise<void> {
-    return new Promise<void>((resolve, reject) => {
-      if (this.context.microsoftTeams) {
-        this.context.microsoftTeams.getContext(context => {
-          this.teamsContext = context;
-          resolve();
-        });
-      } else {
-        resolve();
-      }
-    });
   }
 
   protected get dataVersion(): Version {

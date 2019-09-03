@@ -16,7 +16,7 @@ In this lab you will create a SharePoint Framework solution that will work in bo
 
 ## Watch the Module - Video
 
-This module has been recorded and is available in the SharePoint Development YouTube channel: [SharePoint Framework Training - Build Microsoft Teams customization using SharePoint Framework](https://www.youtube.com/watch?v=0zVtDn0ckBM&list=PLR9nK3mnD-OV-RPXQ3Lco845qoEy7VJoc)
+This module has been recorded and is available in the SharePoint Development YouTube channel: [SharePoint Framework Training - Build Microsoft Teams customization using SharePoint Framework](https://www.youtube.com/watch?v=Yfs3-qawJfA&list=PLR9nK3mnD-OV-RPXQ3Lco845qoEy7VJoc)
 
 ## Contributors
 
@@ -28,10 +28,11 @@ This module has been recorded and is available in the SharePoint Development You
 
 ## Version history
 
-| Version |     Date      |        Comments        |
-| ------- | ------------- | ---------------------- |
-| 1.1     | June 12, 2019 | 2019Q4 content refresh |
-| 1.0     | April 3, 2019 | Initial release        |
+| Version |       Date        |        Comments        |
+| ------- | ----------------- | ---------------------- |
+| 1.2     | September 2, 2019 | 2020Q1 content refresh |
+| 1.1     | June 12, 2019     | 2019Q4 content refresh |
+| 1.0     | April 3, 2019     | Initial release        |
 
 ## Disclaimer
 

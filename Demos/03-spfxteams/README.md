@@ -2,6 +2,8 @@
 
 In this demo, you will update the configuration settings for the SharePoint Framework application, as well as update the configuration details of the Microsoft Teams application.
 
+> This demo assumes you completed the previous demo. The final result from the previous demo is used as the starting point for this demo. The final results from the previous demo can be found here: [../02-spfxteams](../02-spfxteams).
+
 1. Add a new custom property to the web part:
     1. Locate and open the file **./src/webparts/spFxTeamsTogether/SpFxTeamsTogetherWebPart.ts**.
     1. Locate the interface `ISpFxTeamsTogetherWebPartProps`.
@@ -80,6 +82,9 @@ In this demo, you will update the configuration settings for the SharePoint Fram
 
         ![Screenshot of the SPFx solution in SharePoint](../../Images/updateSettings-01.png)
 
+        > NOTE: The value of the custom property will start out blank even though you set a default value
+        > for it in the manifest file. The default value only gets set for new web parts.
+
     1. Now go back into the Microsoft Teams team. Refresh the page if you have Teams open in a web browser. Select the down arrow to the right of the **SPFx Teams Together** tab and select **Settings**.
 
         ![Screenshot of the SPFx solution in Microsoft Teams](../../Images/updateSettings-02.png)
@@ -125,8 +130,6 @@ In this demo, you will update the configuration settings for the SharePoint Fram
             ![Screenshot confirming installation of the SPFx Teams Together app](../../Images/addTab-07.png)
 
         1. The application should now load in Microsoft Teams within the **General** channel under the tab **SPFx Teams Together**.
-
-            ![Screenshot setting up the SPFx Teams Together app](../../Images/addTab-08.png)
 
         1. Notice how the web part's property pane opens by default. Edit the values of the public properties on the web part and then select the **X** in the upper-right corner of the property pane to close the initial configuration:
 

@@ -23,6 +23,8 @@ To complete this lab, you need the following:
 
 In this exercise you will create a SharePoint Framework (SPFx) solution that will work in both SharePoint and as a tab in Microsoft Teams.
 
+> NOTE: The instructions below assume you are using v1.9.1 of the SharePoint Framework Yeoman generator.
+
 1. Open a command prompt and change to the folder where you want to create the project.
 1. Run the SharePoint Yeoman generator by executing the following command:
 
@@ -209,7 +211,7 @@ In this exercise you will create a SharePoint Framework (SPFx) solution that wil
 
 ## Exercise 2: Adding Conditional Logic for SharePoint or Microsoft Teams
 
-In this exercise, you will update the SharePoint Framework web part to display different information on the page depending if it is running within a SharePoint of Microsoft Teams context.
+In this exercise, you will update the SharePoint Framework web part to display different information on the page depending on whether it is running within a SharePoint of Microsoft Teams context.
 
 > This exercise assumes you completed the previous exercise. The final result from the previous exercise is used as the starting point for this exercise. The final results from the previous exercise can be found here: [./Demos/01-spfxteams](./Demos/01-spfxteams).
 
@@ -389,6 +391,9 @@ In this exercise, you will update the configuration settings for the SharePoint 
 
         ![Screenshot of the SPFx solution in SharePoint](./Images/updateSettings-01.png)
 
+        > NOTE: The value of the custom property will start out blank even though you set a default value
+        > for it in the manifest file. The default value only gets set for new web parts.
+
     1. Now go back into the Microsoft Teams team. Refresh the page if you have Teams open in a web browser. Select the down arrow to the right of the **SPFx Teams Together** tab and select **Settings**.
 
         ![Screenshot of the SPFx solution in Microsoft Teams](./Images/updateSettings-02.png)
@@ -434,8 +439,6 @@ In this exercise, you will update the configuration settings for the SharePoint 
             ![Screenshot confirming installation of the SPFx Teams Together app](./Images/addTab-07.png)
 
         1. The application should now load in Microsoft Teams within the **General** channel under the tab **SPFx Teams Together**.
-
-            ![Screenshot setting up the SPFx Teams Together app](./Images/addTab-08.png)
 
         1. Notice how the web part's property pane opens by default. Edit the values of the public properties on the web part and then select the **X** in the upper-right corner of the property pane to close the initial configuration:
 
