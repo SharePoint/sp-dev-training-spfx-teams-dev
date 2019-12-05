@@ -104,7 +104,7 @@ In this demo, you will update the configuration settings for the SharePoint Fram
     1. Select the down-arrow to the right of the **SPFx Teams Together** tab and select **Remove**.
     1. When prompted, select **Remove**.
 1. Update the previously installed Microsoft Teams app:
-    1. Within the Microsoft Teams client, select **Store** in the lower right corner, and then select your tenant from the sidebar menu.
+    1. Within the Microsoft Teams client, select **Apps** in the lower right corner, and then select your tenant from the sidebar menu.
     1. Select the app menu, then select **Update**.
 
         ![Screenshot of the SPFx solution in Microsoft Teams](../../Images/updateSettings-04.png)

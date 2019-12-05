@@ -30,6 +30,7 @@ This module has been recorded and is available in the SharePoint Development You
 
 | Version |       Date        |        Comments        |
 | ------- | ----------------- | ---------------------- |
+| 1.3     | December 6, 2019  | 2020Q2 content refresh |
 | 1.2     | September 2, 2019 | 2020Q1 content refresh |
 | 1.1     | June 12, 2019     | 2019Q4 content refresh |
 | 1.0     | April 3, 2019     | Initial release        |
