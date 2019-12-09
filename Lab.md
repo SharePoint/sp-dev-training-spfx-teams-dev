@@ -189,11 +189,11 @@ In this exercise you will create a SharePoint Framework (SPFx) solution that wil
 
                 ![Screenshot SPFx Teams Together app](./Images/addTab-04.png)
 
-            1. In the **SPFx Teams Together** dialog, select the **My First Team** in the **Add to a team** dropdown control and select **Install**.
+            1. In the **SPFx Teams Together** dialog, select the **Add to a team** button.
 
                 ![Screenshot installing the SPFx Teams Together app](./Images/addTab-05.png)
 
-            1. In the **SPFx Teams Together is now available for My First Team** dialog, select the **General** channel and select **Set up**.
+            1. In the next dialog, select the **General** channel in the **My First Team** team and select **Set up a tab**.
 
                 ![Screenshot setting up the SPFx Teams Together app](./Images/addTab-06.png)
 
@@ -211,7 +211,7 @@ In this exercise you will create a SharePoint Framework (SPFx) solution that wil
 
 ## Exercise 2: Adding Conditional Logic for SharePoint or Microsoft Teams
 
-In this exercise, you will update the SharePoint Framework web part to display different information on the page depending on whether it is running within a SharePoint of Microsoft Teams context.
+In this exercise, you will update the SharePoint Framework web part to display different information depending on whether it is running within a SharePoint or Microsoft Teams context.
 
 > This exercise assumes you completed the previous exercise. The final result from the previous exercise is used as the starting point for this exercise. The final results from the previous exercise can be found here: [./Demos/01-spfxteams](./Demos/01-spfxteams).
 
@@ -245,7 +245,7 @@ In this exercise, you will update the SharePoint Framework web part to display d
     }
     ```
 
-1. Locate the `render()` method in the `SpFxTeamsTogetherWebPart` class. Add the following two members to set the title and current location depending if the web part is running in a SharePoint or Microsoft Teams context. Notice how using the necessary context property, you can get the name of the team or SharePoint site the web part is currently running within:
+1. Locate the `render()` method in the `SpFxTeamsTogetherWebPart` class. Add the following two members to set the title and current location depending on whether the web part is running in a SharePoint or Microsoft Teams context. Notice how using the necessary context property, you can get the name of the team or SharePoint site where the web part is currently running:
 
     ```ts
     let title: string = (this.teamsContext) 
@@ -413,7 +413,7 @@ In this exercise, you will update the configuration settings for the SharePoint 
     1. Select the down-arrow to the right of the **SPFx Teams Together** tab and select **Remove**.
     1. When prompted, select **Remove**.
 1. Update the previously installed Microsoft Teams app:
-    1. Within the Microsoft Teams client, select **Store** in the lower right corner, and then select your tenant from the sidebar menu.
+    1. Within the Microsoft Teams client, select **Apps** in the lower right corner, and then select your tenant from the sidebar menu.
     1. Select the app menu, then select **Update**.
 
         ![Screenshot of the SPFx solution in Microsoft Teams](./Images/updateSettings-04.png)

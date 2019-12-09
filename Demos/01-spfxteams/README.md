@@ -168,11 +168,11 @@ In this demo you will create a SharePoint Framework (SPFx) solution that will wo
 
                 ![Screenshot SPFx Teams Together app](../../Images/addTab-04.png)
 
-            1. In the **SPFx Teams Together** dialog, select the **My First Team** in the **Add to a team** dropdown control and select **Install**.
+            1. In the **SPFx Teams Together** dialog, select the **Add to a team** button.
 
                 ![Screenshot installing the SPFx Teams Together app](../../Images/addTab-05.png)
 
-            1. In the **SPFx Teams Together is now available for My First Team** dialog, select the **General** channel and select **Set up**.
+            1. In the next dialog, select the **General** channel in the **My First Team** team and select **Set up a tab**.
 
                 ![Screenshot setting up the SPFx Teams Together app](../../Images/addTab-06.png)
 

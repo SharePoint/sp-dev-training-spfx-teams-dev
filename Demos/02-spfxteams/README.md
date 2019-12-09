@@ -1,6 +1,6 @@
 # Adding Conditional Logic for SharePoint or Microsoft Teams
 
-In this demo, you will update the SharePoint Framework web part to display different information on the page depending on whether it is running within a SharePoint of Microsoft Teams context.
+In this exercise, you will update the SharePoint Framework web part to display different information depending on whether it is running within a SharePoint or Microsoft Teams context.
 
 > This demo assumes you completed the previous demo. The final result from the previous demo is used as the starting point for this demo. The final results from the previous demo can be found here: [../01-spfxteams](../01-spfxteams).
 
@@ -34,7 +34,7 @@ In this demo, you will update the SharePoint Framework web part to display diffe
     }
     ```
 
-1. Locate the `render()` method in the `SpFxTeamsTogetherWebPart` class. Add the following two members to set the title and current location depending if the web part is running in a SharePoint or Microsoft Teams context. Notice how using the necessary context property, you can get the name of the team or SharePoint site the web part is currently running within:
+1. Locate the `render()` method in the `SpFxTeamsTogetherWebPart` class. Add the following two members to set the title and current location depending on whether the web part is running in a SharePoint or Microsoft Teams context. Notice how using the necessary context property, you can get the name of the team or SharePoint site where the web part is currently running:
 
     ```ts
     let title: string = (this.teamsContext) 
