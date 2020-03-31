@@ -18,13 +18,13 @@
     "full": "SPFx Teams Together description"
   },
   "icons": {
-    "outline": "30a56bef-d500-452a-885d-b091d9151dbe_outline.png",
-    "color": "30a56bef-d500-452a-885d-b091d9151dbe_color.png"
+    "outline": "eb634e30-3d39-4e43-bbf7-546557f8ba40_outline.png",
+    "color": "eb634e30-3d39-4e43-bbf7-546557f8ba40_color.png"
   },
   "accentColor": "#004578",
   "configurableTabs": [
     {
-      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=30a56bef-d500-452a-885d-b091d9151dbe%26forceLocale={locale}",
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=eb634e30-3d39-4e43-bbf7-546557f8ba40%26forceLocale={locale}",
       "canUpdateConfiguration": true,
       "scopes": [
         "team"
