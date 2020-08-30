@@ -1,6 +1,6 @@
 # DEMO: Deploy SharePoint Framework solutions to Microsoft Teams
 
-This completed project is the result of the lab exercise **Deploy SharePoint Framework solutions to Microsoft Teams** that is referenced in the [README](../../) in this repo.
+This completed project is the result of the lab exercise **Deploy SharePoint Framework solutions to Microsoft Teams** that is referenced in the [README](../../README.md) in this repo.
 
 ## Prerequisites
 

@@ -47,12 +47,12 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
         <div class="${ styles.container}">
           <div class="${ styles.row}">
             <div class="${ styles.column }">
-                <span class="${ styles.title }">Welcome to ${ title }!</span>
-                <p class="${ styles.subTitle }">Currently in the context of the following ${ currentLocation }</p>
-                <p class="${ styles.description }">${escape(this.properties.description)}</p>
-                <a href="https://aka.ms/spfx" class="${ styles.button }">
+              <span class="${ styles.title }">Welcome to ${ title }!</span>
+              <p class="${ styles.subTitle }">Currently in the context of the following ${ currentLocation }</p>
+              <p class="${ styles.description }">${escape(this.properties.description)}</p>
+              <a href="https://aka.ms/spfx" class="${ styles.button }">
                 <span class="${ styles.label }">Learn more</span>
-                </a>
+              </a>
             </div>
           </div>
         </div>

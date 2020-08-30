@@ -10,15 +10,15 @@ The lab for this module is available in multiple units within the associated Mic
 
 - [Exercise - Deploy SharePoint Framework solutions to Microsoft Teams](https://docs.microsoft.com/learn/modules/sharepoint-spfx-teams-dev/3-exercise-deploy)
 
-    In this exercise, you'll create a SharePoint Framework web part solution that will work in both SharePoint Online and as a tab in Microsoft Teams.
+  In this exercise, you'll create a SharePoint Framework web part solution that will work in both SharePoint Online and as a tab in Microsoft Teams.
 
 - [Exercise - Add conditional logic for SharePoint or Microsoft Teams](https://docs.microsoft.com/learn/modules/sharepoint-spfx-teams-dev/5-exercise-conditional-logic)
 
-    In this exercise, you'll update the SharePoint Framework web part from the previous exercise to display different information depending on whether its running within a SharePoint or Microsoft Teams context.
+  In this exercise, you'll update the SharePoint Framework web part from the previous exercise to display different information depending on whether its running within a SharePoint or Microsoft Teams context.
 
 - [Exercise - Update configuration settings](https://docs.microsoft.com/learn/modules/sharepoint-spfx-teams-dev/7-exercise-update-configuration-settings)
 
-    In this exercise, you'll update the configuration settings for the SharePoint Framework application and the configuration details of the Microsoft Teams application.
+  In this exercise, you'll update the configuration settings for the SharePoint Framework application and the configuration details of the Microsoft Teams application.
 
 ## Demos
 
@@ -32,7 +32,7 @@ This module has been recorded and is available in the SharePoint Development You
 
 ## Contributors
 
-|        Roles         |                                                   Author(s)                                                    |
+| Roles                | Author(s)                                                                                                      |
 | -------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Lab Manuals / Slides | Andrew Connell (Microsoft MVP, [Voitanos](//github.com/voitanos)) [@andrewconnell](//github.com/andrewconnell) |
 | QA                   | Rob Windsor (Microsoft MVP, PAIT Group) [@rob-windsor](//github.com/rob-windsor)                               |
@@ -40,8 +40,9 @@ This module has been recorded and is available in the SharePoint Development You
 
 ## Version history
 
-| Version |       Date        |                      Comments                      |
+| Version | Date              | Comments                                           |
 | ------- | ----------------- | -------------------------------------------------- |
+| 1.5     | August 31, 2020   | FY2021Q1 content refresh                           |
 | 1.4     | March 10, 2020    | FY2020Q3 content refresh & port module to MS Learn |
 | 1.3     | December 6, 2019  | FY2020Q2 content refresh                           |
 | 1.2     | September 2, 2019 | FY2020Q1 content refresh                           |
