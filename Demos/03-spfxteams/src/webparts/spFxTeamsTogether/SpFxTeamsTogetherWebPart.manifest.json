@@ -3,7 +3,7 @@
   // Licensed under the MIT license.
 
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "eb634e30-3d39-4e43-bbf7-546557f8ba40",
+  "id": "6cbfb80b-bc52-408b-b491-ccc1903be6d2",
   "alias": "SpFxTeamsTogetherWebPart",
   "componentType": "WebPart",
 
