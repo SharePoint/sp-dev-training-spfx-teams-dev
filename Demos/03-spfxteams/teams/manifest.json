@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.2/MicrosoftTeams.schema.json",
   "manifestVersion": "1.2",
   "packageName": "SpFxTeamsTogetherWebPart",
-  "id": "6cbfb80b-bc52-408b-b491-ccc1903be6d2",
-  "version": "0.2",
+  "id": "3e2a9954-bc07-4bc9-8ff9-12505efe492b",
+  "version": "0.1",
   "developer": {
     "name": "Parker Porcupine",
     "websiteUrl": "https://products.office.com/en-us/sharepoint/collaboration",
@@ -18,13 +18,13 @@
     "full": "SPFx Teams Together description"
   },
   "icons": {
-    "outline": "6cbfb80b-bc52-408b-b491-ccc1903be6d2_outline.png",
-    "color": "6cbfb80b-bc52-408b-b491-ccc1903be6d2_color.png"
+    "outline": "3e2a9954-bc07-4bc9-8ff9-12505efe492b_outline.png",
+    "color": "3e2a9954-bc07-4bc9-8ff9-12505efe492b_color.png"
   },
   "accentColor": "#004578",
   "configurableTabs": [
     {
-      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=6cbfb80b-bc52-408b-b491-ccc1903be6d2%26forceLocale={locale}",
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=3e2a9954-bc07-4bc9-8ff9-12505efe492b%26forceLocale={locale}",
       "canUpdateConfiguration": false,
       "scopes": [
         "team"

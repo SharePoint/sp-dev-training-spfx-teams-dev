@@ -81,7 +81,7 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
                 }),
                 PropertyPaneTextField('customSetting', {
                   label: 'Custom Setting'
-                })                
+                })
               ]
             }
           ]
