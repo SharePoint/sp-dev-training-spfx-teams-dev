@@ -22,19 +22,6 @@ export interface ISpFxTeamsTogetherWebPartProps {
 export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpFxTeamsTogetherWebPartProps> {
   private teamsContext: microsoftTeams.Context;
 
-  protected onInit(): Promise<void> {
-    return new Promise<void>((resolve, reject) => {
-      if (this.context.microsoftTeams) {
-        this.context.microsoftTeams.getContext(context => {
-          this.teamsContext = context;
-          resolve();
-        });
-      } else {
-        resolve();
-      }
-    });
-  }
-
   public render(): void {
     let title: string = (this.teamsContext)
       ? 'Teams'
@@ -44,9 +31,9 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
       : `site collection ${this.context.pageContext.web.title}`;
 
     this.domElement.innerHTML = `
-      <div class="${ styles.spFxTeamsTogether}">
-        <div class="${ styles.container}">
-          <div class="${ styles.row}">
+      <div class="${styles.spFxTeamsTogether}">
+        <div class="${styles.container}">
+          <div class="${styles.row}">
             <div class="${ styles.column }">
               <span class="${ styles.title }">Welcome to ${ title }!</span>
               <p class="${ styles.subTitle }">Currently in the context of the following ${ currentLocation }</p>
@@ -59,6 +46,15 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
           </div>
         </div>
       </div>`;
+  }
+
+  protected onInit(): Promise<void> {
+    return new Promise<void>((resolve, reject) => {
+      if (this.context.sdks.microsoftTeams) {
+        this.teamsContext = this.context.sdks.microsoftTeams.context;
+      }
+      resolve();
+    });
   }
 
   protected get dataVersion(): Version {
