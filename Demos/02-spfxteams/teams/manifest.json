@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.2/MicrosoftTeams.schema.json",
   "manifestVersion": "1.2",
   "packageName": "SpFxTeamsTogetherWebPart",
-  "id": "3e2a9954-bc07-4bc9-8ff9-12505efe492b",
+  "id": "b471e9f3-b4ce-4bdd-a59a-40eb93e29f42",
   "version": "0.1",
   "developer": {
     "name": "Parker Porcupine",
@@ -18,13 +18,13 @@
     "full": "SPFx Teams Together description"
   },
   "icons": {
-    "outline": "3e2a9954-bc07-4bc9-8ff9-12505efe492b_outline.png",
-    "color": "3e2a9954-bc07-4bc9-8ff9-12505efe492b_color.png"
+    "outline": "b471e9f3-b4ce-4bdd-a59a-40eb93e29f42_outline.png",
+    "color": "b471e9f3-b4ce-4bdd-a59a-40eb93e29f42_color.png"
   },
   "accentColor": "#004578",
   "configurableTabs": [
     {
-      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=3e2a9954-bc07-4bc9-8ff9-12505efe492b%26forceLocale={locale}",
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=b471e9f3-b4ce-4bdd-a59a-40eb93e29f42%26forceLocale={locale}",
       "canUpdateConfiguration": true,
       "scopes": [
         "team"
