@@ -22,6 +22,15 @@ export interface ISpFxTeamsTogetherWebPartProps {
 export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpFxTeamsTogetherWebPartProps> {
   private teamsContext: microsoftTeams.Context;
 
+  protected onInit(): Promise<void> {
+    return new Promise<void>((resolve, reject) => {
+      if (this.context.sdks.microsoftTeams) {
+        this.teamsContext = this.context.sdks.microsoftTeams.context;
+      }
+      resolve();
+    });
+  }
+
   public render(): void {
     let title: string = (this.teamsContext)
       ? 'Teams'
@@ -46,15 +55,6 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
           </div>
         </div>
       </div>`;
-  }
-
-  protected onInit(): Promise<void> {
-    return new Promise<void>((resolve, reject) => {
-      if (this.context.sdks.microsoftTeams) {
-        this.teamsContext = this.context.sdks.microsoftTeams.context;
-      }
-      resolve();
-    });
   }
 
   protected get dataVersion(): Version {
