@@ -4,7 +4,7 @@
     "environment": "spo",
     "version": "1.12.1",
     "libraryName": "spfxteams",
-    "libraryId": "9b9b6a90-4adc-47d7-9f39-d4a40e68fa32",
+    "libraryId": "57091ad3-eb71-456d-8c29-46c121a9b1a6",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"

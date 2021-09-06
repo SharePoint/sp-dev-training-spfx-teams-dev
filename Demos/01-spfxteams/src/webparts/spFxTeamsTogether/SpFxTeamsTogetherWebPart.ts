@@ -14,7 +14,6 @@ export interface ISpFxTeamsTogetherWebPartProps {
 }
 
 export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpFxTeamsTogetherWebPartProps> {
-
   public render(): void {
     this.domElement.innerHTML = `
       <div class="${ styles.spFxTeamsTogether }">
