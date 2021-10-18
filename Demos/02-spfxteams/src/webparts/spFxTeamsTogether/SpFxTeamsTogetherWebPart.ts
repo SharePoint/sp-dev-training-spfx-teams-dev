@@ -8,11 +8,10 @@ import {
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { escape } from '@microsoft/sp-lodash-subset';
+import * as microsoftTeams from '@microsoft/teams-js';
 
 import styles from './SpFxTeamsTogetherWebPart.module.scss';
 import * as strings from 'SpFxTeamsTogetherWebPartStrings';
-
-import * as microsoftTeams from '@microsoft/teams-js';
 
 export interface ISpFxTeamsTogetherWebPartProps {
   description: string;

@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "spfxteams-client-side-solution",
-    "id": "9b9b6a90-4adc-47d7-9f39-d4a40e68fa32",
+    "id": "57091ad3-eb71-456d-8c29-46c121a9b1a6",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
