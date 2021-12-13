@@ -42,6 +42,7 @@ This module has been recorded and is available in the SharePoint Development You
 
 | Version |        Date        |                      Comments                      |
 | ------- | ------------------ | -------------------------------------------------- |
+| 1.10    | December 8, 2021   | FY2022Q2 content refresh; retire local workbench   |
 | 1.9     | September 13, 2021 | FY2022Q1 content refresh                           |
 | 1.8     | June 17, 2021      | FY2021Q4 content refresh                           |
 | 1.7     | March 6, 2021      | FY2021Q3 content refresh                           |
