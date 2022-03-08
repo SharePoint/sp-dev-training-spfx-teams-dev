@@ -3,9 +3,9 @@
     "plusBeta": false,
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.13.0",
+    "version": "1.13.1",
     "libraryName": "spfxteams",
-    "libraryId": "cd601325-a781-4fff-94ca-26cc2b67086b",
+    "libraryId": "ae6ad367-34e4-4a8c-95bd-0b5573898816",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"
