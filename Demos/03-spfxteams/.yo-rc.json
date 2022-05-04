@@ -2,11 +2,14 @@
   "@microsoft/generator-sharepoint": {
     "plusBeta": false,
     "isCreatingSolution": true,
-    "environment": "spo",
-    "version": "1.13.1",
+    "version": "1.14.0",
     "libraryName": "spfxteams",
-    "libraryId": "ae6ad367-34e4-4a8c-95bd-0b5573898816",
+    "libraryId": "1e8748ba-6327-4037-8f46-7d7da75cac6e",
+    "environment": "spo",
     "packageManager": "npm",
+    "solutionName": "spfxteams",
+    "solutionShortDescription": "spfxteams description",
+    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "componentType": "webpart"
   }
