@@ -23,12 +23,6 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
   private _isDarkTheme: boolean = false;
   private _environmentMessage: string = '';
 
-  protected onInit(): Promise<void> {
-    this._environmentMessage = this._getEnvironmentMessage();
-
-    return super.onInit();
-  }
-
   public render(): void {
     this.domElement.innerHTML = `
     <section class="${styles.spFxTeamsTogether} ${!!this.context.sdks.microsoftTeams ? styles.teams : ''}">
@@ -37,7 +31,7 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
         <h2>Well done, ${escape(this.context.pageContext.user.displayName)}!</h2>
         <div>${this._environmentMessage}</div>
         <div>Description property value: <strong>${escape(this.properties.description)}</strong></div>
-        <div>Custom setting property value: <strong>${escape(this.properties.customSetting)}</strong></div>        
+<div>Custom setting property value: <strong>${escape(this.properties.customSetting)}</strong></div>
       </div>
       <div>
         <h3>Welcome to SharePoint Framework!</h3>
@@ -58,23 +52,31 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
     </section>`;
   }
 
+  protected onInit(): Promise<void> {
+    this._environmentMessage = this._getEnvironmentMessage();
+
+    return super.onInit();
+  }
+
+
+
   private _getEnvironmentMessage(): string {
     let message: string = "";
-
+  
     if (!!this.context.sdks.microsoftTeams) { // running in Teams
       message = this.context.isServedFromLocalhost ?
         strings.AppLocalEnvironmentTeams :
         strings.AppTeamsTabEnvironment;
-
+  
       message += ". Team name: " + this.context.sdks.microsoftTeams.context.teamName;
     } else {
       message = this.context.isServedFromLocalhost ?
         strings.AppLocalEnvironmentSharePoint :
         strings.AppSharePointEnvironment;
-
+  
       message += ". Site name: " + this.context.pageContext.web.title;
     }
-
+  
     return message;
   }
 
@@ -87,9 +89,12 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
     const {
       semanticColors
     } = currentTheme;
-    this.domElement.style.setProperty('--bodyText', semanticColors.bodyText);
-    this.domElement.style.setProperty('--link', semanticColors.link);
-    this.domElement.style.setProperty('--linkHovered', semanticColors.linkHovered);
+
+    if (semanticColors) {
+      this.domElement.style.setProperty('--bodyText', semanticColors.bodyText || null);
+      this.domElement.style.setProperty('--link', semanticColors.link || null);
+      this.domElement.style.setProperty('--linkHovered', semanticColors.linkHovered || null);
+    }
 
   }
 
