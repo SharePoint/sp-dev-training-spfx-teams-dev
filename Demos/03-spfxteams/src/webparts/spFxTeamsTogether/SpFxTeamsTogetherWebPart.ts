@@ -30,8 +30,8 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
         <img alt="" src="${this._isDarkTheme ? require('./assets/welcome-dark.png') : require('./assets/welcome-light.png')}" class="${styles.welcomeImage}" />
         <h2>Well done, ${escape(this.context.pageContext.user.displayName)}!</h2>
         <div>${this._environmentMessage}</div>
-        <div>Description property value: <strong>${escape(this.properties.description)}</strong></div>
-<div>Custom setting property value: <strong>${escape(this.properties.customSetting)}</strong></div>
+        <div>Web part property value: <strong>${escape(this.properties.description)}</strong></div>
+        <div>Custom setting property value: <strong>${escape(this.properties.customSetting)}</strong></div>
       </div>
       <div>
         <h3>Welcome to SharePoint Framework!</h3>
