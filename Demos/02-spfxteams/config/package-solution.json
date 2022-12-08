@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "spfxteams-client-side-solution",
-    "id": "5ad32fc0-a115-4645-961e-c5405e953ff1",
+    "id": "d2ae9875-4f19-4ad9-a5fd-e649a7589f06",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
@@ -29,7 +29,7 @@
       {
         "title": "spfxteams Feature",
         "description": "The feature that activates elements of the spfxteams solution.",
-        "id": "bba43fd2-0bd2-47f5-a9b2-2857b45045a0",
+        "id": "e4a95e7c-2203-4423-83d3-a231181065cf",
         "version": "1.0.0.0"
       }
     ]
