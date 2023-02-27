@@ -1,6 +1,3 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT license.
-
 import { Version } from '@microsoft/sp-core-library';
 import {
   IPropertyPaneConfiguration,
@@ -51,31 +48,36 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
   }
 
   protected onInit(): Promise<void> {
-    this._environmentMessage = this._getEnvironmentMessage();
-
-    return super.onInit();
+    return this._getEnvironmentMessage().then(message => {
+      this._environmentMessage = message;
+    });
   }
 
 
 
-  private _getEnvironmentMessage(): string {
-    let message: string = "";
-  
-    if (!!this.context.sdks.microsoftTeams) { // running in Teams
-      message = this.context.isServedFromLocalhost ?
-        strings.AppLocalEnvironmentTeams :
-        strings.AppTeamsTabEnvironment;
-  
-      message += ". Team name: " + this.context.sdks.microsoftTeams.context.teamName;
+  private _getEnvironmentMessage(): Promise<string> {
+    let environmentMessage: string = '';
+
+    if (!!this.context.sdks.microsoftTeams) { // running in Teams, office.com or Outlook
+      return this.context.sdks.microsoftTeams.teamsJs.app.getContext()
+        .then(teamsContext => {
+          environmentMessage = this.context.isServedFromLocalhost
+            ? strings.AppLocalEnvironmentTeams
+            : strings.AppTeamsTabEnvironment;
+
+          environmentMessage += `. Team name: ${teamsContext.team?.displayName}`;
+
+          return environmentMessage;
+        });
     } else {
-      message = this.context.isServedFromLocalhost ?
-        strings.AppLocalEnvironmentSharePoint :
-        strings.AppSharePointEnvironment;
-  
-      message += ". Site name: " + this.context.pageContext.web.title;
+      environmentMessage = this.context.isServedFromLocalhost
+        ? strings.AppLocalEnvironmentTeams
+        : strings.AppTeamsTabEnvironment;
+
+      environmentMessage += `. Site name: ${this.context.pageContext.web.title}`;
+
+      return Promise.resolve(environmentMessage);
     }
-  
-    return message;
   }
 
   protected onThemeChanged(currentTheme: IReadonlyTheme | undefined): void {
