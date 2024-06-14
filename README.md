@@ -2,21 +2,21 @@
 
 This module will introduce you to leveraging your SharePoint Framework customizations with Microsoft Teams.
 
-> This module is also published as a Microsoft Learn module: [Build Microsoft Teams customization using the SharePoint Framework](https://docs.microsoft.com/learn/modules/sharepoint-spfx-teams-dev)
+> This module is also published as a Microsoft Learn module: [Build Microsoft Teams customization using the SharePoint Framework](https://learn.microsoft.com/training/modules/sharepoint-spfx-teams-dev)
 
 ## Lab - Build Microsoft Teams customization using the SharePoint Framework
 
 The lab for this module is available in multiple units within the associated Microsoft Learn module. Use the following links to jump to the specific unit. Each Microsoft Learn unit represents a different lab exercise & demo in the presentation.
 
-- [Exercise - Deploy SharePoint Framework solutions to Microsoft Teams](https://docs.microsoft.com/learn/modules/sharepoint-spfx-teams-dev/3-exercise-deploy)
+- [Exercise - Deploy SharePoint Framework solutions to Microsoft Teams](https://learn.microsoft.com/training/modules/sharepoint-spfx-teams-dev/3-exercise-deploy)
 
   In this exercise, you'll create a SharePoint Framework web part solution that will work in both SharePoint Online and as a tab in Microsoft Teams.
 
-- [Exercise - Add conditional logic for SharePoint or Microsoft Teams](https://docs.microsoft.com/learn/modules/sharepoint-spfx-teams-dev/5-exercise-conditional-logic)
+- [Exercise - Add conditional logic for SharePoint or Microsoft Teams](https://learn.microsoft.com/training/modules/sharepoint-spfx-teams-dev/5-exercise-conditional-logic)
 
   In this exercise, you'll update the SharePoint Framework web part from the previous exercise to display different information depending on whether its running within a SharePoint or Microsoft Teams context.
 
-- [Exercise - Update configuration settings](https://docs.microsoft.com/learn/modules/sharepoint-spfx-teams-dev/7-exercise-update-configuration-settings)
+- [Exercise - Update configuration settings](https://learn.microsoft.com/training/modules/sharepoint-spfx-teams-dev/7-exercise-update-configuration-settings)
 
   In this exercise, you'll update the configuration settings for the SharePoint Framework application and the configuration details of the Microsoft Teams application.
 
@@ -40,8 +40,9 @@ This module has been recorded and is available in the SharePoint Development You
 
 ## Version history
 
-| Version | Date               | Comments                                           |
+| Version |        Date        |                      Comments                      |
 | ------- | ------------------ | -------------------------------------------------- |
+| 1.17    | June 14, 2024      | FY2024Q4 content refresh; update to SPFx v1.19     |
 | 1.16    | May 5, 2023        | FY2023Q4 content refresh; update to SPFx v1.17.1   |
 | 1.15    | February 28, 2023  | FY2023Q3 content refresh; update to SPFx v1.16.1   |
 | 1.14    | December 5, 2022   | FY2023Q2 content refresh                           |

@@ -1,10 +1,10 @@
 import { Version } from '@microsoft/sp-core-library';
 import {
-  IPropertyPaneConfiguration,
+  type IPropertyPaneConfiguration,
   PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import { IReadonlyTheme } from '@microsoft/sp-component-base';
+import type { IReadonlyTheme } from '@microsoft/sp-component-base';
 import { escape } from '@microsoft/sp-lodash-subset';
 
 import styles from './SpFxTeamsTogetherWebPart.module.scss';
@@ -68,10 +68,11 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
               environmentMessage = this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentOutlook : strings.AppOutlookEnvironment;
               break;
             case 'Teams': // running in Teams
+            case 'TeamsModern':
               environmentMessage = this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentTeams : strings.AppTeamsTabEnvironment;
               break;
             default:
-              throw new Error('Unknown host');
+              environmentMessage = strings.UnknownEnvironment;
           }
 
           return environmentMessage;

@@ -1,10 +1,10 @@
 import { Version } from '@microsoft/sp-core-library';
 import {
-  IPropertyPaneConfiguration,
+  type IPropertyPaneConfiguration,
   PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import { IReadonlyTheme } from '@microsoft/sp-component-base';
+import type { IReadonlyTheme } from '@microsoft/sp-component-base';
 import { escape } from '@microsoft/sp-lodash-subset';
 
 import styles from './SpFxTeamsTogetherWebPart.module.scss';
@@ -27,7 +27,6 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
         <img alt="" src="${this._isDarkTheme ? require('./assets/welcome-dark.png') : require('./assets/welcome-light.png')}" class="${styles.welcomeImage}" />
         <h2>Well done, ${escape(this.context.pageContext.user.displayName)}!</h2>
         <div>${this._environmentMessage}</div>
-        <div>Web part property value: <strong>${escape(this.properties.description)}</strong></div>
         <div>Description property value: <strong>${escape(this.properties.description)}</strong></div>
         <div>Custom setting property value: <strong>${escape(this.properties.customSetting)}</strong></div>
       </div>
