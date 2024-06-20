@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
   "manifestVersion": "1.16",
-  "packageName": "{{SPFX_COMPONENT_ALIAS}}",
-  "id": "{{SPFX_COMPONENT_ID}}",
+  "packageName": "SpFxTeamsTogetherWebPart",
+  "id": "7ffccb1f-8817-4225-bad2-5a29edfdfbb3",
   "version": "0.16",
   "developer": {
     "name": "Parker Porcupine",
@@ -11,15 +11,15 @@
     "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement"
   },
   "name": {
-    "short": "{{SPFX_COMPONENT_NAME}}"
+    "short": "SPFx Teams Together"
   },
   "description": {
-    "short": "{{SPFX_COMPONENT_SHORT_DESCRIPTION}}",
-    "full": "{{SPFX_COMPONENT_LONG_DESCRIPTION}}"
+    "short": "SPFx Teams Together description",
+    "full": "SPFx Teams Together description"
   },
   "icons": {
-    "outline": "{{SPFX_COMPONENT_ID}}_outline.png",
-    "color": "{{SPFX_COMPONENT_ID}}_color.png"
+    "outline": "7ffccb1f-8817-4225-bad2-5a29edfdfbb3_outline.png",
+    "color": "7ffccb1f-8817-4225-bad2-5a29edfdfbb3_color.png"
   },
   "accentColor": "#004578",
   "configurableTabs": [
