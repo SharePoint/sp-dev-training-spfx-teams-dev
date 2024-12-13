@@ -42,7 +42,8 @@ This module has been recorded and is available in the SharePoint Development You
 
 | Version |        Date        |                      Comments                      |
 | ------- | ------------------ | -------------------------------------------------- |
-| 1.17    | June 14, 2024      | FY2024Q4 content refresh; update to SPFx v1.19     |
+| 1.18    | December 13, 2024  | FY2025Q2 content refresh; update to SPFx v1.20.0   |
+| 1.17    | June 14, 2024      | FY2024Q4 content refresh; update to SPFx v1.19.0   |
 | 1.16    | May 5, 2023        | FY2023Q4 content refresh; update to SPFx v1.17.1   |
 | 1.15    | February 28, 2023  | FY2023Q3 content refresh; update to SPFx v1.16.1   |
 | 1.14    | December 5, 2022   | FY2023Q2 content refresh                           |
