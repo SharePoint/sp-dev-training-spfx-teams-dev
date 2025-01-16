@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "7ffccb1f-8817-4225-bad2-5a29edfdfbb3",
+  "id": "146b0f6e-992e-484e-aa31-f1dbc765f42e",
   "alias": "SpFxTeamsTogetherWebPart",
   "componentType": "WebPart",
 
@@ -22,8 +22,7 @@
     "description": { "default": "SPFx Teams Together description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "SPFx Teams Together",
-      "customSetting": "Default custom setting"
+      "description": "SPFx Teams Together"
     }
   }]
 }
