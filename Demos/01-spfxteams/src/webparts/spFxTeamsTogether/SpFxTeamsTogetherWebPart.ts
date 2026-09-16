@@ -9,6 +9,8 @@ import { escape } from '@microsoft/sp-lodash-subset';
 
 import styles from './SpFxTeamsTogetherWebPart.module.scss';
 import * as strings from 'SpFxTeamsTogetherWebPartStrings';
+import welcomeDark from './assets/welcome-dark.png';
+import welcomeLight from './assets/welcome-light.png';
 
 export interface ISpFxTeamsTogetherWebPartProps {
   description: string;
@@ -23,7 +25,7 @@ export default class SpFxTeamsTogetherWebPart extends BaseClientSideWebPart<ISpF
     this.domElement.innerHTML = `
     <section class="${styles.spFxTeamsTogether} ${!!this.context.sdks.microsoftTeams ? styles.teams : ''}">
       <div class="${styles.welcome}">
-        <img alt="" src="${this._isDarkTheme ? require('./assets/welcome-dark.png') : require('./assets/welcome-light.png')}" class="${styles.welcomeImage}" />
+        <img alt="" src="${this._isDarkTheme ? welcomeDark : welcomeLight}" class="${styles.welcomeImage}" />
         <h2>Well done, ${escape(this.context.pageContext.user.displayName)}!</h2>
         <div>${this._environmentMessage}</div>
         <div>Web part property value: <strong>${escape(this.properties.description)}</strong></div>
